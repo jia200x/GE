@@ -14,5 +14,7 @@ class Object:
         print "Registered object"
         scenario.add_obj(self)
     
-    def render(self, dev):
-       pass 
+    def render(self, core):
+        #By default, render current sprite at x, y
+        print "Rendering object"
+        pass 

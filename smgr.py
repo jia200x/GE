@@ -1,16 +1,19 @@
 
 class SMGR():
-    def __init__(self):
+    def __init__(self, core):
         self.objs = []
         self.current_scenario = None
         self.scenarios = []
+        self.core = None
 
-    def render_objs(self, dev):
-        pass
-        #for each visible object, render.
 
     def add_scenario(self, scenario):
         self.scenarios.append(scenario)
         self.current_scenario = scenario
+
+    def process(self):
+        print "Processing!"
+    def render(self):
+        self.current_scenario.render(self.core)
 
 
